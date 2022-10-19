@@ -1,0 +1,9 @@
+Document: unpaper
+Title: unpaper
+Abstract: postprocess scanned text sheets or books
+Section: Text
+
+Format: HTML
+Index: /usr/share/doc/unpaper/html/index.html
+Files: /usr/share/doc/unpaper/html/*.html
+

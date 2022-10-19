@@ -1,0 +1,78 @@
+unpaper (6.1-2) unstable; urgency=medium
+
+  * update vcs-* fields in d/control
+  * updated debian/watch
+  * bump policy version (3.9.6->3.9.8); no changes
+
+ -- Thomas Koch <thomas@koch.ro>  Mon, 19 Sep 2016 21:44:03 +0200
+
+unpaper (6.1-1) unstable; urgency=medium
+
+  * build with dh-autoreconf
+  * new upstream version
+  * bump policy version (3.9.6)
+  * deactivate testsuite. too fragile, see debian/rules
+  * add gpg signature fetching to debian/watch
+
+ -- Thomas Koch <thomas@koch.ro>  Thu, 13 Aug 2015 23:46:57 +0200
+
+unpaper (0.4.2-1) unstable; urgency=low
+
+  * add debian/watch file
+  * install with dh_install*
+  * fix lintian warnings
+  * debian/copyright: new upstream, machine readable
+  * use minimal debian/rules
+  * update debhelper version and debian/compat (9)
+  * updated policy version (3.9.3)
+  * Changed maintainer to me (with blessing from jblache, thx)
+  * add VCS-* fields for new Git repo
+  * set debian/source/format to "3.0 (quilt)"
+  * manpage now provided by upstream, remove debian's manpage
+  * new upstream version (Closes: #656768)
+    - Changed to new upstream Diego Elio Pettenò, with blessing 
+      from original author Jens Gulden
+    - Major code and build system cleanup and optimizations
+    - rewritten option parsing, --input-sequence and
+      --output-sequence removed
+
+ -- Thomas Koch <thomas@koch.ro>  Sat, 24 Jun 2012 16:49:20 +0200
+
+unpaper (0.3-1) unstable; urgency=low
+
+  * New upstream release.
+    + Fixes output file corruption when paper size is given as an argument
+      (closes: #398612).
+  * debian/control:
+    + Bump Standards-Version to 3.7.3 (no changes).
+  * debian/rules:
+    + Build with -O2.
+  * debian/unpaper.1:
+    + Update manpage.
+
+ -- Julien BLACHE <jblache@debian.org>  Mon, 31 Dec 2007 12:12:04 +0100
+
+unpaper (0.2-3) unstable; urgency=low
+
+  * readme.txt, unpaper.html:
+    + Fix typos here too, see 0.2-2.
+  * debian/docs:
+    + Install unpaper.html & doc/ (closes: #441257).
+
+ -- Julien BLACHE <jblache@debian.org>  Sat, 08 Sep 2007 15:31:15 +0200
+
+unpaper (0.2-2) unstable; urgency=low
+
+  * debian/unpaper.1:
+    + Fix typos, applied patch from A. Costa (closes: #421914).
+  * src/unpaper.c:
+    + Fix typos here too.
+
+ -- Julien BLACHE <jblache@debian.org>  Wed, 02 May 2007 17:35:01 +0200
+
+unpaper (0.2-1) unstable; urgency=low
+
+  * Initial release (closes: #368204).
+
+ -- Julien BLACHE <jblache@debian.org>  Sat, 20 May 2006 17:29:05 +0200
+

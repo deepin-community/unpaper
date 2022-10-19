@@ -1,0 +1,28 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with autoreconf
+
+override_dh_auto_build:
+	dh_auto_build
+	mkdir -p html/doc
+	cd html/doc && ln -s ../../img img
+# replace .md links with .html links
+	markdown -o html/index.html README.md
+	sed -i -e 's/\(a href="doc\/\)\([^"]\+\)\(.md">\)/\1\2.html">/' html/index.html
+	for F in doc/*.md; do markdown -o html/doc/$$(basename -s .md $$F).html $$F;done
+
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS
+
+override_dh_compress:
+	cd debian/unpaper/usr/share/doc/unpaper && rm NEWS COPYING
+	dh_compress
+
+override_dh_clean:
+	rm -rf html
+	dh_clean
+
+override_dh_auto_test:
+# Don't run the tests. Upstream explains why they don't work here:
+# https://blog.flameeyes.eu/2014/10/the-subtlety-of-modern-cpus-or-the-search-for-the-phantom-bug

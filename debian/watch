@@ -1,0 +1,5 @@
+version=3
+
+opts=pgpsigurlmangle=s/$/.sig/ \
+ https://www.flameeyes.eu/projects/unpaper \
+ /files/unpaper-([\d\.]+)\.(?:tar\.xz|txz|tar\.bz2|tbz2|tar\.gz|tgz)

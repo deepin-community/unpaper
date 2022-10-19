@@ -1,0 +1,24 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: unpaper
+Upstream-Contact: Diego Elio Pettenò <flameeyes@flameeyes.eu>
+Source: https://github.com/Flameeyes/unpaper
+
+Files: *
+Copyright: 2005-2006 Jens Gulden <unpaper@jensgulden.de>
+           2011 Diego Elio Pettenò <flameeyes@flameeyes.eu>
+License: GPL-2
+ Unpaper is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, version 2 of the License.
+ .
+ Unpaper is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the full text of the GNU General Public
+ License version 2 can be found in the file
+ `/usr/share/common-licenses/GPL-2'.
